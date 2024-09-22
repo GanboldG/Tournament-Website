@@ -7,7 +7,11 @@ namespace App\Http\Controllers;
 class PagesController extends Controller
 {
     public function welcome(){
-        return view('welcome');
+        $data = array(
+            "title" => "Welcome to No Longer Laravel",
+            "text" => "A place where you can just do stuff... I think.. :D"
+        );
+        return view('pages.welcome') -> with($data);
     }
 
     public function about(){
