@@ -143,7 +143,7 @@ class PostsController extends Controller
 
         // If the user actually edited an image
         if($request->hasFile('cover_image')){
-            $post->image_cover = $request->input('cover_image');
+            $post->cover_image = $request->input('cover_image');
         }
         $post->save();
 
@@ -164,5 +164,9 @@ class PostsController extends Controller
         }
 
         return redirect('/posts') -> with('success', 'Post Removed');
+    }
+
+    public function get_it(){
+        return "XD";
     }
 }

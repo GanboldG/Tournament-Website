@@ -9,7 +9,7 @@ class PagesController extends Controller
     public function welcome(){
         $data = array(
             "title" => "Welcome to No Longer Laravel",
-            "text" => "A place where you can just do stuff... I think.. :D"
+            "text" => "Roses are red"
         );
         return view('pages.welcome') -> with($data);
     }

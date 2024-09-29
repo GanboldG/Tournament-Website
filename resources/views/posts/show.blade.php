@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h1>Post #{{$post->id}}</h1>
-        <img style="width:100%" src="storage/cover_image/{{$post->cover_image}}">
+        <img style="width:100%" src="/storage/cover_image/{{$post->cover_image}}">
         <h3 class="text-muted">{{$post->title}}</h3>
         <p class="text-muted">{!!nl2br(e($post->body))!!}</p>
         <hr>
